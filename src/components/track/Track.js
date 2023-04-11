@@ -1,10 +1,17 @@
 import React from 'react';
+import './Track.css';
 
 export class Track extends React.Component{
+    
+    renderAction(isRemoval) {
+        if (isRemoval) {
+            return '-';
+        } else {
+            return '+';
+        }
+    }
+
     render() {
-        // renderAction() {
-            
-        // }
 
         return (
             <div className="Track">
